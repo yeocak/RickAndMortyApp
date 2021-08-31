@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import Characters from './src/screen/Characters';
 import Locations from './src/screen/Locations';
@@ -80,11 +80,17 @@ function AllTabs() {
   return (
     <BottomNav.Navigator tabBar={props => <MyTabBar {...props} />}>
       <BottomNav.Screen name="Characters" component={Characters} options={{
-        headerStyle: {backgroundColor: CustomColors.barRight},
-        headerTintColor: CustomColors.backBlue
+        headerStyle: { backgroundColor: CustomColors.backBlue },
+        headerTintColor: 'white'
       }} />
-      <BottomNav.Screen name="Locations" component={Locations} />
-      <BottomNav.Screen name="Episodes" component={Episodes} />
+      <BottomNav.Screen name="Locations" component={Locations} options={{
+        headerStyle: { backgroundColor: CustomColors.backBlue },
+        headerTintColor: 'white'
+      }} />
+      <BottomNav.Screen name="Episodes" component={Episodes} options={{
+        headerStyle: { backgroundColor: CustomColors.backBlue },
+        headerTintColor: 'white'
+      }} />
     </BottomNav.Navigator>
   );
 }
@@ -95,6 +101,9 @@ const App = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="AllTabs" component={AllTabs} />
       </Stack.Navigator>
+      <StatusBar
+      backgroundColor={CustomColors.backBlue}
+      />
     </NavigationContainer>
   );
 };

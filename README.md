@@ -1,19 +1,19 @@
 # My first React Native App: Rick And Morty App
 
-First page show you 20 characters from series. If you scroll down app loads 20 more. 
-Card background colors are automatically accordings to the photo.
-If you click to a character card, you can see deatil off the chracter.
+First page shows you 20 characters from the series. If you scroll down app loads 20 more. 
+Card background colors are automatically changes according to the photo.
+If you click to a character card, you can see detail off the chracter.
 
 ![](https://github.com/yeocak/RickAndMortyApp/blob/master/forgithub/first.png)
 
 
-Second page show you 20 locations from series. If you scroll down app loads 20 more. 
+Second page shows you 20 locations from the series. If you scroll down app loads 20 more. 
 If you click to a location card, you can see the characters in that location.
 
 ![](https://github.com/yeocak/RickAndMortyApp/blob/master/forgithub/second.png)
 
 
-Third page show you 20 episodes. 
+Third page shows you 20 episodes. 
 If you scroll down app loads 20 more. If you click to a episode card, you can see the characters in that episode.
 
 ![](https://github.com/yeocak/RickAndMortyApp/blob/master/forgithub/third.png)
